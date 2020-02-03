@@ -49,4 +49,4 @@ product depending on its existence in the database
 
 
 ## Presentation link
-Link to the presentation: [Consumer Insights](https://docs.google.com/presentation/d/1Y87Zx1paC_1mu5wxPh92PQM2EvLrC9RXcGUGLQR9pNU/edit?usp=sharing)
+Link to the presentation: [Consumer Insights](https://docs.google.com/presentation/d/1LgjccAxRll5AvbEsLykzDlM9rAx5p8IMZn-9fky06lI/edit#slide=id.g6e85928c07_0_28)
