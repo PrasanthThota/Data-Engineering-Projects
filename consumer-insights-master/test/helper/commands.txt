@@ -1,0 +1,84 @@
+aws s3 ls s3://amazon-reviews-pds/tsv/
+
+aws s3 cp s3://amazon-reviews-pds/parquet/product_category=Electronics/part-00000-495c48e6-96d6-4650-aa65-3c36a3516ddd.c000.snappy.parquet .
+
+aws s3 cp s3://amazon-reviews-pds/tsv/amazon_reviews_us_Camera_v1_00.tsv.gz s3://amazon-customer-reviews-dataset/tsv/amazon_reviews_us_Camera_v1_00.tsv.gz
+
+aws s3 cp s3://amazon-reviews-pds s3://amazon-customer-reviews-dataset --recursive
+
+aws s3 ls --summarize --human-readable --recursive s3://amazon-customer-reviews-dataset
+
+PUT
+http://localhost:9200/electronics
+
+elasticsearch-6.5.4 curl -X PUT localhost:9200/company
+
+POST
+http://localhost:9200/electronics/reviews/1
+{
+	"customer_id": 52826068,
+	"review_body": "These headphones are very nice.  Sound is quite good and well balanced.  I tend to balk at these only because they often seem kind of clunky and heavy.  These are really very comfortable.  Great for watching a movie or concert on a tablet laptop without bothering anybody.  Could have a nicer storage bag for price, but otherwise very good."
+}
+
+http://localhost:9200/_cat/indices
+
+http://localhost:9200/electronics/_search
+
+ps aux | grep 'java'
+kill -9 <PID>
+
+aws s3 cp s3://amazon-customer-reviews-dataset/parquet/product_category=Electronics/ . --recursive
+
+http://localhost:9200/electronics/product/_search?q=product_title:bluetooth
+
+npm install -g @angular/cli
+npm install --save-dev @angular/cli@latest
+
+ng new consumer-insights-client-angular
+cd consumer-insights-client-angular
+ng serve --open
+ng g c product-search
+ng g c product
+ng g c star-rating
+
+npm install --save-dev @angular-devkit/build-angular
+npm install --save @ng-bootstrap/ng-bootstrap
+
+sudo kill -9 $(sudo lsof -t -i:4200)
+
+http://localhost:4200/
+
+export AIRFLOW_GPL_UNIDECODE=yes
+
+peg sshcmd-cluster spark-cluster 'sudo apt install bc --assume-yes'
+peg sshcmd-cluster spark-cluster 'sudo shutdown -r 0'
+
+peg sshcmd-cluster spark-cluster 'sudo pip install --upgrade pip'
+peg sshcmd-cluster spark-cluster 'python3 -m pip install elasticsearch'
+peg sshcmd-cluster spark-cluster "sudo apt-get install python3-pip --assume-yes"
+peg sshcmd-cluster spark-cluster 'sudo pip install bson'
+
+spark-submit play.py --master spark://ip-10-0-0-8.ec2.internal:7077 --deploy-mode cluster
+
+python -m pip uninstall -y pip
+
+curl 'localhost:9200/_cat/nodes?v'
+
+peg sshcmd-cluster spark-cluster 'export PYSPARK_PYTHON=python3.5'
+
+sudo apt-get install python3-pip
+sudo python3 -m pip install package
+
+sudo apt install ng-common
+
+sudo apt-get install npm
+
+ng serve --host 0.0.0.0 --disableHostCheck true
+
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+start-dfs.sh
+
+sudo AIRFLOW_GPL_UNIDECODE=yes pip3 install apache-airflow
+
+airflow webserver -p 8081
